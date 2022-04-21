@@ -1,0 +1,146 @@
+﻿{
+  "code": "lblbarkbasket",
+  "class": "BlockLabeledChest",
+  "entityclass": "LabeledChest",
+  "behaviors": [{ "name": "Lockable" }, { "name": "Container" }],
+  "entityBehaviors": [{ "name": "Animatable" }],
+  "attributes": {
+    "handbook": { "groupBy": ["lblbarkbasket-*"] },
+    "inventoryClassName": "barkbasket",
+    "defaultType": "basket",
+    "openSound": "game:sounds/block/basketopen",
+    "closeSound": "game:sounds/block/basketclose",
+    "types": ["basket"],
+    "drop": {
+      "basket": true
+    },
+    "quantitySlots": {
+      "basket": 8
+    },
+    "dialogTitleLangCode": {
+      "basket": "basketcontents"
+    },
+    "storageType": {
+      "basket": 189
+    },
+    "retrieveOnly": {
+      "basket": false
+    },
+    "shape": {
+      "basket": "lc:block/barkbasket-labeled"
+    },
+    "variantByGroup": "variant",
+    "variantByGroupInventory": "variant"
+  },
+  "variantgroups": [
+    { "code": "variant", "loadFromProperties": "block/wood", "states": ["aged"] },
+    { "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
+  ],
+  "creativeinventory": {},
+  "creativeinventoryStacksByType": {
+    "*-east": [
+      {
+        "tabs": ["general", "decorative", "ancienttools"],
+        "stacks": [{ "type": "block", "code": "lblbarkbasket-{variant}-east", "attributes": { "type": "basket" } }]
+      }
+    ]
+  },
+  "shapeInventory": { "base": "lc:block/barkbasket-labeled", "rotateY": 270 },
+  "shapeByType": {
+    "*-north": { "base": "lc:block/barkbasket-labeled", "rotateY": 0 },
+    "*-east": { "base": "lc:block/barkbasket-labeled", "rotateY": 270 },
+    "*-west": { "base": "lc:block/barkbasket-labeled", "rotateY": 90 },
+    "*-south": { "base": "lc:block/barkbasket-labeled", "rotateY": 180 }
+  },
+  "texturesByType": {
+    "*-ebony-*": {
+      "basket-accessories": { "base": "game:block/wood/trunk/accessories" },
+      "bark": { "base": "game:block/wood/bark/{variant}" },
+      "inside": { "base": "ancienttools:block/strippedlog/ebony_outer", "rotation": 90 },
+      "basket-bark": { "base": "game:block/wood/bark/{variant}" },
+      "basket-inside": { "base": "ancienttools:block/strippedlog/ebony_outer", "rotation": 90 }
+    },
+    "*-purpleheart-*": {
+      "basket-accessories": { "base": "game:block/wood/trunk/accessories" },
+      "bark": { "base": "game:block/wood/bark/{variant}" },
+      "inside": { "base": "ancienttools:block/strippedlog/purpleheart_outer", "rotation": 90 },
+      "basket-bark": { "base": "game:block/wood/bark/{variant}" },
+      "basket-inside": { "base": "ancienttools:block/strippedlog/purpleheart_outer", "rotation": 90 }
+    },
+    "*": {
+      "basket-accessories": { "base": "game:block/wood/trunk/accessories" },
+      "bark": { "base": "game:block/wood/bark/{variant}" },
+      "inside": { "base": "game:block/wood/debarked/{variant}", "rotation": 90 },
+      "basket-bark": { "base": "game:block/wood/bark/{variant}" },
+      "basket-inside": { "base": "game:block/wood/debarked/{variant}", "rotation": 90 }
+    }
+  },
+  "combustibleProps": {
+    "burnTemperature": 800,
+    "burnDuration": 60
+  },
+  "heldTpIdleAnimation": "holdbothhands",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "blockmaterial": "Wood",
+  "replaceable": 900,
+  "resistance": 2,
+  "lightAbsorption": 0,
+  "sideAo": { "all": false },
+  "sidesolid": {
+    "all": false
+  },
+  "sideopaque": {
+    "all": false
+  },
+  "collisionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0.125,
+    "x2": 0.875,
+    "y2": 0.5,
+    "z2": 0.875,
+    "rotateYByType": {
+      "*-north": 270,
+      "*-east": 180,
+      "*-south": 90,
+      "*-west": 0
+    }
+  },
+  "selectionbox": {
+    "x1": 0.125,
+    "y1": 0,
+    "z1": 0.125,
+    "x2": 0.875,
+    "y2": 0.5,
+    "z2": 0.875,
+    "rotateYByType": {
+      "*-north": 270,
+      "*-east": 180,
+      "*-south": 90,
+      "*-west": 0
+    }
+  },
+  "sounds": {
+    "place": "game:block/planks",
+    "walk": "game:walk/wood",
+    "hit": "game:block/planks",
+    "break": "game:block/planks"
+  },
+  "materialDensity": 600,
+  "tpHandTransform": {
+    "translation": { "x": -0.9, "y": 0, "z": -0.9 },
+    "rotation": { "x": 36, "y": 21, "z": -80 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 0.5
+  },
+  "guiTransform": {
+    "origin": { "x": 0.5, "y": 0.3, "z": 0.5 },
+    "scale": 1.3
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": -45, "z": 0 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 2.5
+  }
+}

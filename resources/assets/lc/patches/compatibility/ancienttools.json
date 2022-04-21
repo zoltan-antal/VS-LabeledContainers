@@ -1,0 +1,23 @@
+[
+  {
+    "file": "blocktypes/ancienttools/barkbasket.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "dependsOn": [{ "modid": "ancienttools", "invert": true }]
+  },
+  {
+    "file": "recipes/grid/barkbasket.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "dependsOn": [{ "modid": "ancienttools", "invert": true }]
+  },
+  {
+    "file": "recipes/grid/recycle/barkbasket.json",
+    "op": "add",
+    "path": "/enabled",
+    "value": false,
+    "dependsOn": [{ "modid": "ancienttools", "invert": true }]
+  }
+]

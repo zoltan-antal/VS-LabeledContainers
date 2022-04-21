@@ -1,0 +1,11 @@
+{
+  "ingredientPattern": "S,C",
+  "ingredients": {
+    "S": { "type": "block", "code": "game:sign-ground-north" },
+    "C": { "type": "block", "code": "ancienttools:barkbasket-*-east", "name": "bark" }
+  },
+  "shapeless": true,
+  "width": 1,
+  "height": 2,
+  "output": { "type": "block", "code": "lblbarkbasket-{bark}-east", "attributes": { "type": "basket" } }
+}

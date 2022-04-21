@@ -1,0 +1,37 @@
+{
+  "ingredientPattern": "S,C",
+  "ingredients": {
+    "S": { "type": "item", "code": "game:saw-*", "isTool": true },
+    "C": {
+      "type": "block",
+      "code": "lblstoragevessel-*",
+      "attributes": { "type": "normal-labeled" },
+      "name": "var",
+      "allowedVariants": [
+        "ashforest",
+        "chthonic",
+        "copper",
+        "earthen",
+        "rain",
+        "burned",
+        "cowrie",
+        "rime",
+        "oxblood",
+        "loam",
+        "undergrowth",
+        "beehive",
+        "harvest",
+        "honeydew",
+        "rutile",
+        "seasalt",
+        "springflowers",
+        "volcanic"
+      ]
+    }
+  },
+  "recipeGroup": 2,
+  "shapeless": true,
+  "width": 1,
+  "height": 2,
+  "output": { "type": "block", "code": "game:storagevessel-{var}", "attributes": { "type": "normal" } }
+}

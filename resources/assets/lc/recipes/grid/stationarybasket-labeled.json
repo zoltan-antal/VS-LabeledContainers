@@ -1,0 +1,11 @@
+{
+  "ingredientPattern": "S,C",
+  "ingredients": {
+    "S": { "type": "block", "code": "game:sign-ground-north" },
+    "C": { "type": "block", "code": "game:stationarybasket-east", "attributes": { "type": "reed" } }
+  },
+  "shapeless": true,
+  "width": 1,
+  "height": 2,
+  "output": { "type": "block", "code": "lblstationarybasket-east", "attributes": { "type": "reed" } }
+}

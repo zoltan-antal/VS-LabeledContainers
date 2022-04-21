@@ -1,0 +1,11 @@
+{
+  "type": "content",
+  "modid": "lc",
+  "name": "Labeled Containers",
+  "description": "Labeled storage vessels and baskets",
+  "authors": ["Craluminum2413"],
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "1.16.0"
+  }
+}
