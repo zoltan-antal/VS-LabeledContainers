@@ -1,0 +1,43 @@
+{
+  "ingredientPattern": "S,C",
+  "ingredients": {
+    "S": { "type": "block", "code": "game:sign-ground-north" },
+    "C": {
+      "type": "block",
+      "code": "game:storagevessel-*",
+      "attributes": { "type": "normal" },
+      "name": "var",
+      "allowedVariants": [
+        "ashforest",
+        "chthonic",
+        "copper",
+        "earthen",
+        "rain",
+        "cowrie",
+        "rime",
+        "oxblood",
+        "loam",
+        "undergrowth",
+        "beehive",
+        "harvest",
+        "honeydew",
+        "rutile",
+        "seasalt",
+        "springflowers",
+        "volcanic",
+        "cloisonne",
+        "cornflower",
+        "talik",
+        "caveaurora",
+        "collonade",
+        "rattlesnake",
+        "waves",
+        "wintersea"
+      ]
+    }
+  },
+  "shapeless": true,
+  "width": 1,
+  "height": 2,
+  "output": { "type": "block", "code": "lblstoragevessel-{var}", "attributes": { "type": "normal-labeled" } }
+}
