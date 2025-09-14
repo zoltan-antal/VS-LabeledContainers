@@ -27,13 +27,17 @@
       "basket": false
     },
     "shape": {
-      "basket": "lc:block/barkbasket-labeled"
+      "basket": "lcupdated:block/barkbasket-labeled"
     },
     "variantByGroup": "variant",
     "variantByGroupInventory": "variant"
   },
   "variantgroups": [
-    { "code": "variant", "loadFromProperties": "block/wood", "states": ["aged"] },
+    {
+      "code": "variant",
+      "loadFromProperties": "block/wood",
+      "states": ["aged"]
+    },
     { "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
   ],
   "creativeinventory": {},
@@ -41,38 +45,65 @@
     "*-east": [
       {
         "tabs": ["general", "decorative", "ancienttools"],
-        "stacks": [{ "type": "block", "code": "lblbarkbasket-{variant}-east", "attributes": { "type": "basket" } }]
+        "stacks": [
+          {
+            "type": "block",
+            "code": "lblbarkbasket-{variant}-east",
+            "attributes": { "type": "basket" }
+          }
+        ]
       }
     ]
   },
-  "shapeInventory": { "base": "lc:block/barkbasket-labeled", "rotateY": 270 },
+  "shapeInventory": {
+    "base": "lcupdated:block/barkbasket-labeled",
+    "rotateY": 270
+  },
   "shapeByType": {
-    "*-north": { "base": "lc:block/barkbasket-labeled", "rotateY": 0 },
-    "*-east": { "base": "lc:block/barkbasket-labeled", "rotateY": 270 },
-    "*-west": { "base": "lc:block/barkbasket-labeled", "rotateY": 90 },
-    "*-south": { "base": "lc:block/barkbasket-labeled", "rotateY": 180 }
+    "*-north": { "base": "lcupdated:block/barkbasket-labeled", "rotateY": 0 },
+    "*-east": { "base": "lcupdated:block/barkbasket-labeled", "rotateY": 270 },
+    "*-west": { "base": "lcupdated:block/barkbasket-labeled", "rotateY": 90 },
+    "*-south": { "base": "lcupdated:block/barkbasket-labeled", "rotateY": 180 }
   },
   "texturesByType": {
     "*-ebony-*": {
       "basket-accessories": { "base": "game:block/wood/trunk/accessories" },
       "bark": { "base": "game:block/wood/bark/{variant}" },
-      "inside": { "base": "ancienttools:block/strippedlog/ebony_outer", "rotation": 90 },
+      "inside": {
+        "base": "ancienttools:block/strippedlog/ebony_outer",
+        "rotation": 90
+      },
       "basket-bark": { "base": "game:block/wood/bark/{variant}" },
-      "basket-inside": { "base": "ancienttools:block/strippedlog/ebony_outer", "rotation": 90 }
+      "basket-inside": {
+        "base": "ancienttools:block/strippedlog/ebony_outer",
+        "rotation": 90
+      }
     },
     "*-purpleheart-*": {
       "basket-accessories": { "base": "game:block/wood/trunk/accessories" },
       "bark": { "base": "game:block/wood/bark/{variant}" },
-      "inside": { "base": "ancienttools:block/strippedlog/purpleheart_outer", "rotation": 90 },
+      "inside": {
+        "base": "ancienttools:block/strippedlog/purpleheart_outer",
+        "rotation": 90
+      },
       "basket-bark": { "base": "game:block/wood/bark/{variant}" },
-      "basket-inside": { "base": "ancienttools:block/strippedlog/purpleheart_outer", "rotation": 90 }
+      "basket-inside": {
+        "base": "ancienttools:block/strippedlog/purpleheart_outer",
+        "rotation": 90
+      }
     },
     "*": {
       "basket-accessories": { "base": "game:block/wood/trunk/accessories" },
       "bark": { "base": "game:block/wood/bark/{variant}" },
-      "inside": { "base": "game:block/wood/debarked/{variant}", "rotation": 90 },
+      "inside": {
+        "base": "game:block/wood/debarked/{variant}",
+        "rotation": 90
+      },
       "basket-bark": { "base": "game:block/wood/bark/{variant}" },
-      "basket-inside": { "base": "game:block/wood/debarked/{variant}", "rotation": 90 }
+      "basket-inside": {
+        "base": "game:block/wood/debarked/{variant}",
+        "rotation": 90
+      }
     }
   },
   "combustibleProps": {

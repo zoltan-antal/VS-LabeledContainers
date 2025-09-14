@@ -9,7 +9,7 @@
         "interactDelay": 0.4,
         "slots": {
           "Hands": {
-            "animation": "carrycapacity:holdlight",
+            "animation": "carryon:holdlight",
             "walkSpeedModifier": -0.15
           },
           "Back": {
@@ -21,7 +21,7 @@
         }
       }
     },
-    "dependsOn": [{ "modid": "carrycapacity" }]
+    "dependsOn": [{ "modid": "carryon" }]
   },
   {
     "file": "blocktypes/storagevessel",
@@ -34,7 +34,7 @@
         "slots": { "Hands": {}, "Back": {} }
       }
     },
-    "dependsOn": [{ "modid": "carrycapacity" }]
+    "dependsOn": [{ "modid": "carryon" }]
   },
   {
     "op": "add",
@@ -50,7 +50,7 @@
         "interactDelay": 0.4,
         "slots": {
           "Hands": {
-            "animation": "carrycapacity:holdlight",
+            "animation": "carryon:holdlight",
             "walkSpeedModifier": -0.15
           },
           "Back": {
@@ -63,6 +63,6 @@
       }
     },
     "file": "blocktypes/ancienttools/barkbasket",
-    "dependsOn": [{ "modid": "carrycapacity" }, { "modid": "ancienttools" }]
+    "dependsOn": [{ "modid": "carryon" }, { "modid": "ancienttools" }]
   }
 ]

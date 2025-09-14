@@ -2,10 +2,14 @@
   "code": "lblstoragevessel",
   "class": "BlockLabeledChest",
   "entityclass": "LabeledChest",
-  "behaviors": [{ "name": "Lockable" }, { "name": "Container" }, { "name": "UnstableFalling" }],
+  "behaviors": [
+    { "name": "Lockable" },
+    { "name": "Container" },
+    { "name": "UnstableFalling" }
+  ],
   "entityBehaviors": [{ "name": "Animatable" }],
   "attributes": {
-    "handbook": { "groupBy": ["lblstoragevessel-*-{state}"] },
+    "handbook": { "groupBy": ["lblstoragevessel-*"] },
     "partialAttachable": true,
     "inventoryClassName": "chest",
     "defaultType": "normal-labeled",
@@ -32,32 +36,76 @@
       }
     },
     "shape": {
-      "normal-labeled": "lc:block/clay/storagevessel-normal-labeled"
+      "normal-labeled": "lcupdated:block/clay/storagevessel-normal-labeled"
     },
-    "variantByGroup": "color",
-    "variantByGroupInventory": "color",
+    "variantByGroup": "variant",
+    "variantByGroupInventory": "variant",
     "openSound": "game:sounds/block/vesselopen",
     "closeSound": "game:sounds/block/vesselclose"
   },
   "variantgroups": [
-    { "code": "color", "states": ["blue", "fire", "black", "brown", "cream", "gray", "orange", "red", "tan"] },
-	{ "code": "state", "states": ["fired"] }
+    {
+      "code": "variant",
+      "states": [
+        "burned",
+        "ashforest",
+        "chthonic",
+        "copper",
+        "earthen",
+        "rain",
+        "cowrie",
+        "rime",
+        "oxblood",
+        "loam",
+        "undergrowth",
+        "beehive",
+        "harvest",
+        "honeydew",
+        "rutile",
+        "seasalt",
+        "springflowers",
+        "volcanic",
+        "cloisonne",
+        "cornflower",
+        "talik",
+        "caveaurora",
+        "collonade",
+        "rattlesnake",
+        "waves",
+        "wintersea"
+      ]
+    }
   ],
   "creativeinventory": {},
   "creativeinventoryStacks": [
     {
       "tabs": ["general", "decorative"],
-      "stacks": [{ "type": "block", "code": "lblstoragevessel-{color}-fired", "attributes": { "type": "normal-labeled" } }]
+      "stacks": [
+        {
+          "type": "block",
+          "code": "lblstoragevessel-{variant}",
+          "attributes": { "type": "normal-labeled" }
+        }
+      ]
     }
   ],
-  "shape": { "base": "lc:block/clay/storagevessel-normal-labeled" },
-  "shapeInventory": { "base": "lc:block/clay/storagevessel-normal-labeled", "rotateY": 270 },
+  "shape": { "base": "lcupdated:block/clay/storagevessel-normal-labeled" },
+  "shapeInventory": {
+    "base": "lcupdated:block/clay/storagevessel-normal-labeled",
+    "rotateY": 270
+  },
   "textures": {
-    "normal-labeled-accessories": { "base": "game:block/wood/trunk/accessories" },
-    "normal-labeled-ceramic": { "base": "game:block/clay/hardened/{color}" },
-    "normal-labeled-top": { "base": "game:block/clay/hardened/{color}", "overlays": ["game:block/clay/overlay/vessel-top"] },
-    "normal-labeled-sides": { "base": "game:block/clay/hardened/{color}", "overlays": ["game:block/clay/overlay/vessel-sides"] },
-    "normal-labeled-inside": { "base": "game:block/clay/hardened/{color}", "overlays": ["game:block/clay/overlay/vessel-inside"] }
+    "normal-labeled-accessories": {
+      "base": "game:block/wood/trunk/accessories"
+    },
+    "normal-labeled-ceramic": { "base": "game:block/clay/ceramic" },
+    "normal-labeled-top": { "base": "game:block/clay/vessel/top/{variant}" },
+    "normal-labeled-sides": {
+      "base": "game:block/clay/vessel/sides/{variant}"
+    },
+    "normal-labeled-inside": {
+      "base": "game:block/clay/vessel/inside/{variant}"
+    }
   },
   "heldTpIdleAnimation": "holdunderarm",
   "blockmaterial": "Ceramic",

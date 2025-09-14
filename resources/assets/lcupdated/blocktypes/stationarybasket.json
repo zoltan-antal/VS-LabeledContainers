@@ -2,7 +2,14 @@
   "code": "lblstationarybasket",
   "class": "BlockLabeledChest",
   "entityclass": "LabeledChest",
-  "behaviors": [{ "name": "Lockable" }, { "name": "Container" }, { "name": "HorizontalOrientable", "properties": { "dropBlockFace": "east" } }],
+  "behaviors": [
+    { "name": "Lockable" },
+    { "name": "Container" },
+    {
+      "name": "HorizontalOrientable",
+      "properties": { "dropBlockFace": "east" }
+    }
+  ],
   "entityBehaviors": [{ "name": "Animatable" }],
   "attributes": {
     "inventoryClassName": "basket",
@@ -31,34 +38,47 @@
       "vine": false
     },
     "shape": {
-      "reed": "lc:block/reed/basket-normal-labeled",
-      "vine": "lc:block/vines/basket-normal-labeled"
+      "reed": "lcupdated:block/reed/basket-normal-labeled",
+      "vine": "lcupdated:block/vines/basket-normal-labeled"
     },
     "variantByGroup": "side",
     "variantByGroupInventory": null
   },
-  "variantgroups": [{ "code": "side", "loadFromProperties": "abstract/horizontalorientation" }],
+  "variantgroups": [
+    { "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
+  ],
   "creativeinventory": {},
   "creativeinventoryStacksByType": {
     "*-east": [
       {
         "tabs": ["general", "decorative"],
         "stacks": [
-          { "type": "block", "code": "lblstationarybasket-east", "attributes": { "type": "reed" } },
-          { "type": "block", "code": "lblstationarybasket-east", "attributes": { "type": "vine" } }
+          {
+            "type": "block",
+            "code": "lblstationarybasket-east",
+            "attributes": { "type": "reed" }
+          },
+          {
+            "type": "block",
+            "code": "lblstationarybasket-east",
+            "attributes": { "type": "vine" }
+          }
         ]
       }
     ]
   },
   "shapeByType": {
-    "base": "lc:block/reed/basket-normal-labeled",
+    "base": "lcupdated:block/reed/basket-normal-labeled",
     "rotateYByType": {
       "*-east": 270,
       "*-south": 180,
       "*-west": 90
     }
   },
-  "shapeInventory": { "base": "lc:block/reed/basket-normal-labeled", "rotateY": 270 },
+  "shapeInventory": {
+    "base": "lcupdated:block/reed/basket-normal-labeled",
+    "rotateY": 270
+  },
   "textures": {
     "reed-accessories": { "base": "game:block/wood/trunk/accessories" },
     "reed-sidesWE": { "base": "game:block/reed/basket/normal-westeast" },
